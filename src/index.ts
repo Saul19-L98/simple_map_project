@@ -15,8 +15,12 @@ function clearDiv(){
         }
     }
     const newMapContainer = document.createElement("div");
+    const newP = document.createElement('p');
+    newP.innerHTML = "Please enter an address!";
     newMapContainer.setAttribute("id","map");
+    newMapContainer.insertAdjacentElement('afterbegin',newP);
     containerDiv.insertAdjacentElement('afterbegin',newMapContainer);
+
 }
 
 type Geolocation = {
